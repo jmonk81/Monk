@@ -1,4 +1,5 @@
- #1,1,2,3,5,8...
+#code take output and add it to the number before the last output
+#1,1,2,3,5,8...
 number = 1
 last = 0
 befor_last = 0
