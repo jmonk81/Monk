@@ -1,3 +1,13 @@
 ##Importance of Input validation
 Username: Admin
 Password: unknown’ or ‘1’ = ‘1
+
+# Example in Python using SQLite
+import sqlite3
+
+conn = sqlite3.connect('example.db')
+cursor = conn.cursor()
+
+# Using parameterized query
+user_id = 1
+cursor.execute("SELECT * FROM users WHERE id = ?", (user_id,))
